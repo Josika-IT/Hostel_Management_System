@@ -1,0 +1,327 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: #f4f6fb;
+  color: #202b3c;
+}
+
+.app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 255px;
+  background: #17243b;
+  color: white;
+  padding: 28px 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 50px;
+}
+
+.brand-icon {
+  width: 42px;
+  height: 42px;
+  background: #6478ee;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.brand h2 {
+  font-size: 19px;
+}
+
+.brand p,
+.sidebar-bottom small {
+  color: #aab6ca;
+  font-size: 12px;
+}
+
+.menu-label {
+  color: #8d9ab0;
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  margin: 0 0 15px 12px;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.menu-item {
+  border: none;
+  background: transparent;
+  color: #c3cddd;
+  padding: 14px 12px;
+  text-align: left;
+  font-size: 14px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.menu-item:hover,
+.menu-item.active {
+  background: #354768;
+  color: white;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+  border-top: 1px solid #34435b;
+  padding: 20px 10px 0;
+  font-size: 13px;
+}
+
+.sidebar-bottom small {
+  display: block;
+  margin-top: 5px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 30px 38px;
+  min-width: 0;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.topbar h2 {
+  font-size: 23px;
+}
+
+.topbar p {
+  color: #8490a2;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.admin-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.avatar {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  background: #e1e6ff;
+  color: #5267d8;
+  display: grid;
+  place-items: center;
+}
+
+.welcome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.welcome h1 {
+  font-size: 25px;
+}
+
+.welcome p {
+  color: #8490a2;
+  font-size: 14px;
+  margin-top: 7px;
+}
+
+.date-label {
+  background: white;
+  padding: 11px 16px;
+  border-radius: 8px;
+  font-size: 12px;
+  color: #5365cf;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  margin-bottom: 25px;
+}
+
+.stat-card,
+.panel {
+  background: white;
+  border-radius: 13px;
+  padding: 23px;
+  box-shadow: 0 3px 15px rgba(20, 35, 65, 0.04);
+}
+
+.stat-card p {
+  font-size: 13px;
+  color: #7d899c;
+}
+
+.stat-card h2 {
+  font-size: 30px;
+  margin: 15px 0 8px;
+  color: #273b62;
+}
+
+.stat-card span {
+  font-size: 12px;
+  color: #98a2b2;
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.panel h3 {
+  font-size: 17px;
+}
+
+.panel-subtitle {
+  color: #98a2b2;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.occupancy-row {
+  margin-top: 25px;
+}
+
+.occupancy-info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.progress {
+  height: 9px;
+  background: #edf0f6;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background: #6679e8;
+  border-radius: 10px;
+}
+
+.fee-total {
+  font-size: 29px;
+  font-weight: bold;
+  margin-top: 25px;
+  color: #344b78;
+}
+
+.fee-caption {
+  font-size: 12px;
+  color: #98a2b2;
+  margin-top: 5px;
+}
+
+.fee-details {
+  display: flex;
+  gap: 45px;
+  border-top: 1px solid #edf0f5;
+  margin-top: 20px;
+  padding-top: 17px;
+}
+
+.fee-details div {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  font-size: 12px;
+}
+
+.fee-details span {
+  color: #8994a5;
+}
+
+.notice {
+  margin-top: 22px;
+  padding: 14px 18px;
+  background: #eef1ff;
+  color: #5263a8;
+  border-radius: 9px;
+  font-size: 12px;
+}
+
+.page-placeholder {
+  min-height: 160px;
+}
+
+.page-placeholder p {
+  color: #8490a2;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+@media (max-width: 950px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .app {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .brand {
+    margin-bottom: 25px;
+  }
+
+  nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sidebar-bottom {
+    display: none;
+  }
+
+  .main-content {
+    padding: 22px 16px;
+  }
+
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .welcome {
+    align-items: flex-start;
+    gap: 12px;
+    flex-direction: column;
+  }
+}

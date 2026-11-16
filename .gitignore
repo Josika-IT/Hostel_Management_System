@@ -1,0 +1,32 @@
+# Secrets
+.env
+.env.*
+
+# Java
+*.class
+
+# React
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Temporary files
+*.log
+*.tmp
+
+# IDE
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database configuration backups
+pg_hba*.conf
